@@ -11,9 +11,8 @@ const app = express(); // generated an application
 //app.com/page
 //app.com/about
 
-const name = 'Manoj';
+const port = process.env.PORT || 3000;
 
-console.log(__dirname, __filename);
 // define paths to express config
 const publicDirectory = path.join(__dirname, '../public');
 const viewPath = path.join(__dirname, '/templates/views');
@@ -112,7 +111,7 @@ app.get('*', (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   //starts the server
-  console.log('Server up and running on port 3000');
+  console.log('Server up and running on port' + port);
 });
