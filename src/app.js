@@ -11,6 +11,7 @@ const app = express(); // generated an application
 //app.com/page
 //app.com/about
 
+const name = 'manoj';
 const port = process.env.PORT || 3000;
 
 // define paths to express config
