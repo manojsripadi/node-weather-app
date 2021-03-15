@@ -22,6 +22,8 @@ function getWeatherReport(e) {
       console.log('res', res);
       if (res.temperature) {
         document.querySelector('.weather-details').innerHTML =
+          'Temperature shows in celsius' +
+          '<br/>' +
           'address: ' +
           res.address +
           '<br/>' +
